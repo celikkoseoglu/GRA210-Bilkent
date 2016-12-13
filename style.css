@@ -1,0 +1,346 @@
+body	{ 
+	background-image: url('background5.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper	{ 
+	width: 1200px; /* width of the wrapper material */
+	height: auto; /* height of the wrapper material */
+	margin: 40px auto 40px auto;
+	background-color: rgba(252,251,250,0.9);
+	border-radius: 8px;
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30); /* material casts shadow */
+	overflow: auto; /* We are trying to make the wrapper visible again */
+	}
+header	{
+	width: 100%;
+	height: 678px;
+	background-image: url('heroimg3.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: left;
+}
+h1	{
+	font-family: 'Roboto';
+	font-size: 36px;
+	font-weight: 300;
+	color: #607d8b;
+	letter-spacing: -1px;
+}
+.salmon	{
+	color: #ff799c;
+}
+.lavender	{
+	color: #aabee0;
+}
+#herotype	{
+	width: 30%;
+	float: right;
+	margin-top: 240px;
+}
+main	{
+	margin-top: 96px;
+	float: left;
+}
+.card	{
+	width: 22.5%;
+	float: left;
+	margin-left: 2%;
+	margin-top: 24px;
+	height: auto;
+	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 0 9px 18px rgba(0,0,0,0.30);
+}
+.card img	{
+	width: 100%;
+}
+h2	{
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 28px;
+	margin: 24px 0 0 16px;
+	color: rgba(0,0,0,0.54);
+	text-align: center;
+}
+h3	{
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 28px;
+	margin: 24px 0 0 16px;
+	color: #ff799c;
+}
+h4	{
+	font-family: 'Roboto';
+	font-weight: 300;
+	font-size: 16px;
+	margin: 12px 0 0 16px;
+	color: #aabee0;
+}
+header p	{
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 24px;
+	margin-right: 96px;
+	font-weight: 300;
+	margin-top: 24px;
+	color: rgba(0,0,0,0.87);
+}
+.card p	{
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	margin-top: 16px;
+	color: rgba(0,0,0,0.87);
+	margin-left: 16px;
+}
+article	{
+	width: 100%;
+	height: 678px;
+	background-image: url('odeon_overlay.jpg');
+	float: left;
+	margin-top: 96px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+button	{
+	background-color: #ff799c;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	font-family: 'Roboto';
+	font-size: 16px;
+	font-weight: 400;
+	margin-left: 20%;
+	cursor: pointer;
+	padding: 8px;
+	transition: all 0.3s ease 0s; 
+}
+button:hover	{
+	background-color: #aabee0;
+}	
+.floattext	{
+	width: 30%;
+	float: left;
+	margin-top: 96px;
+}
+.floattext h1	{
+	margin-left: 20%;
+}
+.whitetext	{
+	color: #fff;
+}
+#timetable_area	{
+	width: 100%;
+	float: left;
+	margin-top: 96px;
+}
+table	{
+	width: 75%;
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	color: rgba(0,0,0,0.87);
+	margin: 24px auto 96px auto;
+	text-align: left;
+	background-color: #fff;
+	box-shadow: 0 9px 18px rgba(0,0,0,0.30);
+	border-radius: 2px;
+	border-spacing: 22px 22px;
+}
+th	{
+	font-weight: 400;
+	border-bottom: 1px solid rgba(0,0,0,0.30);
+	padding-bottom: 8px;
+}
+.r_align	{
+	text-align: right;
+	color: rgba(0,0,0,0.54);
+}
+.no_line	{
+	border: none;
+}
+.lunch_break	{
+	color: rgba(0,0,0,0.54);
+}
+a	{
+	color: #aabee0;
+	text-decoration: none;
+	transition: all 0.3s ease-in;
+}
+a:hover	{
+	color: #ff799c;
+}
+nav	{
+	width: 1200px;
+	position: fixed;
+	top: 0;
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+ul	{
+	text-align: center;
+	margin: 0 auto;
+}
+li	{
+	display: inline; /* default is display block */
+	padding: 0 6px;
+}
+#timetable_area .card	{
+	width: 22.5%;
+	float: left;
+	margin-left: 2%;
+	margin-top: 24px;
+	height: auto;
+	background-color: transparent;
+	border-radius: 0px;
+	box-shadow: none;
+}
+blockquote	{
+	font-family: 'Roboto';
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	margin-top: 16px;
+	color: #aabee0;
+	margin-left: 12px;
+	margin-right: 0px;	
+}
+#timetable_area button, #timetable_area p 	{
+	margin-left: 12px;
+}
+#map_area	{
+	width: 100%;
+	float: left;
+	margin-top: 48px;
+}
+#map_area img	{
+	width: 90%;
+	margin: 0 auto;
+	display: block;
+}
+.modalDialog	{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	background: rgba(0,0,0,0.75);
+	z-index: 99999;
+	opacity: 0;
+	transition: opacity 0.3s ease-in;
+	pointer-events: none;
+	font-family: 'Roboto';
+}
+.modalDialog:target	{
+	pointer-events: auto;
+	opacity: 1;
+}
+.modalDialog > div { /* element > element selector, it only selects the direct child div */
+	width: 55%;
+	position: relative; /* the contents of this div, will be positioned relative to this div */
+	margin: 10% auto;
+	background: #fff;
+	border-radius: 4px;
+	padding: 24px 48px;
+}
+.close	{
+	background: #ff799c;
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+	position: absolute;
+	line-height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	top: -20px;
+	right: -20px;
+	box-shadow: 0 6px 9px rgba(0,0,0,0.3);
+	transition: all 0.3s ease-in;
+}
+.close:hover	{
+	background: #aabee0;
+	color: #fff;
+	box-shadow: 0 12px 18px rgba(0,0,0,0.3);
+}
+textarea	{
+	display: block;
+	background: #eceff1;
+	width: 80%;
+	height: 20px;
+	margin: 10px auto;
+	font-family: 'Roboto';
+	font-size: 16px;
+	outline: none;
+	border: none;
+	resize: none;
+	font-weight: 400;
+}
+.modalDialog form	{
+	width: 80%;
+	margin: 0 auto;	
+}
+.modalDialog button	{
+	width: 100px;
+	margin-left: -2px !important;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1025px) and (orientation: landscape) {
+	#wrapper	{
+		width: 925px;
+		margin: 30px auto;
+	}
+	nav	{
+		width: 925px;
+	}
+	.card, #timetable_area .card	{
+		width: 47%;
+	}
+	table	{
+		width: 94%;
+	}
+	header	{
+		height: auto;
+	}
+	#herotype	{
+		margin-top: 40px;
+		width: 33%;
+	}
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1025px) and (orientation: portrait) {
+	#wrapper	{
+		width: 725px;
+		margin: 30px auto;
+	}
+	nav	{
+		width: 725px;
+	}
+	.card, #timetable_area .card	{
+		width: 47%;
+	}
+	table	{
+		width: 94%;
+	}
+	header	{
+		height: auto;
+	}
+	#herotype	{
+		margin-top: 40px;
+		width: 42%;
+		background-color: #fff;
+		padding: 4%;
+	}
+}
+
+
+
