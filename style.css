@@ -5,12 +5,13 @@ body	{
 	background-attachment: fixed;
 	margin: 0;
 	padding: 0;
+	-webkit-font-smoothing: antialiased;
 }
 
-#wrapper	{ 
-	width: 1200px; /* width of the wrapper material */
+#wrapper {
+	width: 900px; /* width of the wrapper material */
 	height: auto; /* height of the wrapper material */
-	margin: 40px auto 40px auto;
+	margin: -104px auto 40px auto;
 	background-color: rgba(252,251,250,0.9);
 	border-radius: 8px;
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30); /* material casts shadow */
@@ -18,11 +19,11 @@ body	{
 	}
 header	{
 	width: 100%;
-	height: 678px;
-	background-image: url('heroimg3.png');
+	height: 634px;
+	background-image: url('super-hero-large.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	float: left;
+	background-color: #69BEF5;
 }
 h1	{
 	font-family: 'Roboto';
@@ -40,7 +41,7 @@ h1	{
 #herotype	{
 	width: 30%;
 	float: right;
-	margin-top: 240px;
+	margin-top: 140px;
 }
 main	{
 	margin-top: 96px;
@@ -178,21 +179,33 @@ a:hover	{
 	color: #ff799c;
 }
 nav	{
-	width: 1200px;
+	width: 100%;
 	position: fixed;
 	top: 0;
 	font-family: 'Roboto';
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
+	background: rgb(31, 188, 210);
 }
 ul	{
-	text-align: center;
-	margin: 0 auto;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
 }
-li	{
-	display: inline; /* default is display block */
-	padding: 0 6px;
+
+li {
+	float: right;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 #timetable_area .card	{
 	width: 22.5%;
@@ -294,6 +307,23 @@ textarea	{
 	margin-left: -2px !important;
 }
 
+.announcement-bar {
+	display: block;
+	width: 752px;
+	margin: -52px auto 0 auto;
+	background: #fff;
+	height: 104px;
+	float: none;
+	border-radius: 2px;
+	box-shadow: 0 9px 18px rgba(0, 0, 0, 0.30);
+}
+
+.announcement-bar p {
+	width: 400px;
+}
+
+
+
 @media screen and (min-device-width: 768px) and (max-device-width: 1025px) and (orientation: landscape) {
 	#wrapper	{
 		width: 925px;
@@ -318,29 +348,30 @@ textarea	{
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1025px) and (orientation: portrait) {
-	#wrapper	{
+	#wrapper {
 		width: 725px;
 		margin: 30px auto;
 	}
-	nav	{
+
+	nav {
 		width: 725px;
 	}
-	.card, #timetable_area .card	{
+
+	.card, #timetable_area .card {
 		width: 47%;
 	}
-	table	{
+
+	table {
 		width: 94%;
 	}
-	header	{
+
+	header {
 		height: auto;
 	}
-	#herotype	{
+
+	#herotype {
 		margin-top: 40px;
 		width: 42%;
 		background-color: #fff;
-		padding: 4%;
 	}
 }
-
-
-
