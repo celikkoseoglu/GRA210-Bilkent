@@ -1,5 +1,5 @@
-body	{ 
-	background-image: url('background5.jpg');
+body {
+	background-color: #CFD8DC;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -8,23 +8,50 @@ body	{
 	-webkit-font-smoothing: antialiased;
 }
 
-#wrapper {
-	width: 900px; /* width of the wrapper material */
+.wrapper {
+	width: 1200px; /* width of the wrapper material */
 	height: auto; /* height of the wrapper material */
-	margin: -104px auto 40px auto;
+	margin: 0 auto 40px auto;
+	padding-bottom: 40px;
 	background-color: rgba(252,251,250,0.9);
 	border-radius: 8px;
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30); /* material casts shadow */
 	overflow: auto; /* We are trying to make the wrapper visible again */
-	}
+}
+
 header	{
 	width: 100%;
 	height: 634px;
-	background-image: url('super-hero-large.png');
+	/*background-image: url('super-hero-large.png');*/
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: #69BEF5;
+	background-color: #CFD8DC; /*#69BEF5;*/
 }
+
+#herotype {
+	width: 30%;
+	float: right;
+	margin-top: 140px;
+}
+
+.announcement-bar {
+	position: absolute;
+	display: block;
+	width: 752px;
+	left: 0;
+	right: 0;
+	margin: -54px auto;
+
+	background: #fff;
+	height: 104px;
+	border-radius: 2px;
+	box-shadow: 0 9px 18px rgba(0, 0, 0, 0.36);
+}
+
+.announcement-bar p {
+	width: 400px;
+}
+
 h1	{
 	font-family: 'Roboto';
 	font-size: 36px;
@@ -36,13 +63,9 @@ h1	{
 	color: #ff799c;
 }
 .lavender	{
-	color: #aabee0;
+	color: #B2DFDB;
 }
-#herotype	{
-	width: 30%;
-	float: right;
-	margin-top: 140px;
-}
+
 main	{
 	margin-top: 96px;
 	float: left;
@@ -73,14 +96,14 @@ h3	{
 	font-weight: 300;
 	font-size: 28px;
 	margin: 24px 0 0 16px;
-	color: #ff799c;
+	color: #455A64;
 }
 h4	{
 	font-family: 'Roboto';
 	font-weight: 300;
 	font-size: 16px;
 	margin: 12px 0 0 16px;
-	color: #aabee0;
+	color: #757575;
 }
 header p	{
 	font-family: 'Roboto';
@@ -97,20 +120,12 @@ header p	{
 	line-height: 24px;
 	font-weight: 300;
 	margin-top: 16px;
-	color: rgba(0,0,0,0.87);
+	color: #212121;
 	margin-left: 16px;
 }
-article	{
-	width: 100%;
-	height: 678px;
-	background-image: url('odeon_overlay.jpg');
-	float: left;
-	margin-top: 96px;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
+
 button	{
-	background-color: #ff799c;
+	background-color: #607D8B;
 	border: none;
 	border-radius: 3px;
 	color: #fff;
@@ -147,7 +162,7 @@ table	{
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 300;
-	color: rgba(0,0,0,0.87);
+	color: #212121;
 	margin: 24px auto 96px auto;
 	text-align: left;
 	background-color: #fff;
@@ -186,14 +201,14 @@ nav	{
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
-	background: rgb(31, 188, 210);
 }
 ul	{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #333;
+	background-color: #607D8B;
+	box-shadow: 0 6px 9px rgba(0, 0, 0, 0.3);
 }
 
 li {
@@ -207,29 +222,27 @@ li a {
 	padding: 14px 16px;
 	text-decoration: none;
 }
-#timetable_area .card	{
-	width: 22.5%;
-	float: left;
-	margin-left: 2%;
-	margin-top: 24px;
-	height: auto;
+
+.transparentcard {
 	background-color: transparent;
-	border-radius: 0px;
 	box-shadow: none;
 }
+
+.transparentcard button, .transparentcard p {
+	margin-left: 12px;
+}
+
 blockquote	{
 	font-family: 'Roboto';
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
 	margin-top: 16px;
-	color: #aabee0;
+	color: #607D8B;
 	margin-left: 12px;
 	margin-right: 0px;	
 }
-#timetable_area button, #timetable_area p 	{
-	margin-left: 12px;
-}
+
 #map_area	{
 	width: 100%;
 	float: left;
@@ -307,23 +320,6 @@ textarea	{
 	margin-left: -2px !important;
 }
 
-.announcement-bar {
-	display: block;
-	width: 752px;
-	margin: -52px auto 0 auto;
-	background: #fff;
-	height: 104px;
-	float: none;
-	border-radius: 2px;
-	box-shadow: 0 9px 18px rgba(0, 0, 0, 0.30);
-}
-
-.announcement-bar p {
-	width: 400px;
-}
-
-
-
 @media screen and (min-device-width: 768px) and (max-device-width: 1025px) and (orientation: landscape) {
 	#wrapper	{
 		width: 925px;
@@ -373,5 +369,63 @@ textarea	{
 		margin-top: 40px;
 		width: 42%;
 		background-color: #fff;
+	}
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1025px) and (orientation: landscape) {
+	#wrapper {
+		width: 925px;
+		margin: 30px auto;
+	}
+
+	nav {
+		width: 925px;
+	}
+
+	.card, #timetable_area .card {
+		width: 47%;
+	}
+
+	table {
+		width: 94%;
+	}
+
+	header {
+		height: auto;
+	}
+
+	#herotype {
+		margin-top: 40px;
+		width: 33%;
+	}
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1025px) and (orientation: portrait) {
+	#wrapper {
+		width: 725px;
+		margin: 30px auto;
+	}
+
+	nav {
+		width: 725px;
+	}
+
+	.card, #timetable_area .card {
+		width: 20%;
+	}
+
+	table {
+		width: 94%;
+	}
+
+	header {
+		height: auto;
+	}
+
+	#herotype {
+		margin-top: 40px;
+		width: 42%;
+		background-color: #fff;
+		padding: 4%;
 	}
 }
