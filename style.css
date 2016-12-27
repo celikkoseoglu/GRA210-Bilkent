@@ -19,13 +19,25 @@ body {
 	overflow: auto; /* We are trying to make the wrapper visible again */
 }
 
+.transparentWrapper {
+	width: 1200px; /* width of the wrapper material */
+	height: auto; /* height of the wrapper material */
+	margin: 0 auto 0 auto;
+	overflow: auto; /* We are trying to make the wrapper visible again */
+}
+
 header	{
 	width: 100%;
 	height: 634px;
-	/*background-image: url('super-hero-large.png');*/
+	background-image: url('images/hero-img.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: #CFD8DC; /*#69BEF5;*/
+	background-color: #131b1f; /*#69BEF5;*/
+	background-size: 634px 476px;
+	background-position: 10% 40%;
+	box-shadow: 0 9px 18px rgba(0, 0, 0, 0.36);
+	position: relative;
+	z-index: 2;
 }
 
 #herotype {
@@ -41,7 +53,7 @@ header	{
 	left: 0;
 	right: 0;
 	margin: -54px auto;
-
+	z-index: 3;
 	background: #fff;
 	height: 104px;
 	border-radius: 2px;
@@ -49,12 +61,52 @@ header	{
 }
 
 .announcement-bar p {
-	width: 400px;
+	margin-top: 48px;
+	height: 100px;
+	background: red;
+	margin: 10px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	float: left;
+}
+
+/* tricky tricks to vertically center text in a floating card */
+.inner {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.inner4 {
+	line-height: normal; /* Reset line-height for the child. */
+	background: none;
+}
+
+.inner4 h3 {
+	margin: 0;
+}
+
+.block4 {
+	text-align: center;
+	width: 70%;
+	line-height: 6.5em;
+}
+
+.block_button { /* this was probably the most difficult part */
+	text-align: center;
+	width: 30%;
+	line-height: 6.5em;
+	float: right;
+}
+
+/* end of tricky tricks */
+
+.announcement-bar button {
+	margin-left: 0;
+	width: 150px;
 }
 
 h1	{
-	font-family: 'Roboto';
-	font-size: 36px;
 	font-weight: 300;
 	color: #607d8b;
 	letter-spacing: -1px;
@@ -201,21 +253,26 @@ nav	{
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
+	z-index: 4;
 }
+
+nav ul {
+	background-color: #020506;
+	box-shadow: 0 6px 9px rgba(0, 0, 0, 0.3);
+}
+
 ul	{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: #607D8B;
-	box-shadow: 0 6px 9px rgba(0, 0, 0, 0.3);
 }
 
-li {
+nav li {
 	float: right;
 }
 
-li a {
+nav li a {
 	display: block;
 	color: white;
 	text-align: center;
@@ -319,6 +376,99 @@ textarea	{
 	width: 100px;
 	margin-left: -2px !important;
 }
+
+footer {
+	width: 100%;
+	height: 434px;
+	background: #131b1f url('images/hero-img-footer.jpg') no-repeat 50% 25%;
+	background-size: 900px auto;
+	padding: 35px 0;
+	text-align: center;
+	font-family: 'Roboto';
+	font-size: 16px;
+}
+
+footer li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+ul.social-buttons {
+	margin-top: 380px;
+	margin-bottom: 0;
+	white-space: nowrap;
+}
+
+ul.social-buttons li a {
+	display: block;
+	background-color: transparent;
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+	font-size: 20px;
+	line-height: 40px;
+	color: #fff;
+	outline: 0;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s
+}
+
+/*Animations are always the hardest part*/
+.inner4 h3 {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .10em solid #455A64; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	animation: typing 3.5s steps(40, end),
+	blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from {
+		width: 0
+	}
+	to {
+		width: 100%
+	}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from, to {
+		border-color: transparent
+	}
+	50% {
+		border-color: #455A64;
+	}
+}
+
+/*Animations end here*/
+
+ul.social-buttons .twitter:hover, ul.social-buttons .twitter:focus, ul.social-buttons .twitter:active {
+	background-color: rgb(85, 172, 238);
+}
+
+ul.social-buttons .facebook:hover, ul.social-buttons .facebook:focus, ul.social-buttons .facebook:active {
+	background-color: rgb(59, 89, 152);
+}
+
+ul.social-buttons .linkedin:hover, ul.social-buttons .linkedin:focus, ul.social-buttons .linkedin:active {
+	background-color: rgb(0, 123, 181);
+}
+
+ul.social-buttons .github:hover, ul.social-buttons .github:focus, ul.social-buttons .github:active {
+	background-color: rgb(128, 1, 128);
+}
+
+ul.social-buttons .instagram:hover, ul.social-buttons .instagram:focus, ul.social-buttons .instagram:active {
+	background-color: rgb(155, 105, 84);
+}
+
+ul.social-buttons .mail:hover, ul.social-buttons .mail:focus, ul.social-buttons .mail:active {
+	background-color: rgb(221, 221, 221);
+}
+
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1025px) and (orientation: landscape) {
 	#wrapper	{

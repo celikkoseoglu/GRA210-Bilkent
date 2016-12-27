@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
 </head>
 
@@ -11,29 +11,31 @@
 <nav>
     <ul>
         <li style="float: left"><a href="index.html#s">DevCon</a></li>
+        <li><a href="index.html#location_area">Location</a></li>
+        <li><a href="index.html#workshops_area">Workshops</a></li>
+        <li><a href="index.html#schedule_area">Schedule</a></li>
         <li><a href="index.html#speaker_anchor">Speakers</a></li>
-        <li><a href="index.html#register_anchor">Register</a></li>
-        <li><a href="index.html#timetable_area">Schedule</a></li>
-        <li><a href="index.html#timetable_area">Workshops</a></li>
-        <li><a href="index.html#timetable_area">Location</a></li>
     </ul>
 </nav>
 
 <header>
-    <div id="herotype">
-        <h1><span class="salmon">NATURAL<img src="triangle_logo.gif"><br/>
-			INTERFACES</span><br/>
-            2007.<br/>
-            <span class="lavender"> WEB DESIGN<br/>
-			CONFERENCE.<br/></span>
-            JANUARY 26 - 29<br/>
-            ODEON, BILKENT.<br/></h1>
-        <p>Natural Interfaces Conference offers a perspective of the past, present and the future of interface
-            design.</p>
-    </div>
+
 </header>
+
 <div class="announcement-bar">
-    <p style="border: 5px solid red"><strong>Google Developer Day Beijing &amp; Shanghai</strong> 12/2016</p>
+    <div class="block_button">
+        <div class="inner inner4">
+            <form>
+                <button type="submit" formaction="http://www.google.com">Register Now!</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="block4">
+        <div class="inner inner4"><h3>San Francisco, Bay Area</strong> 01/2017</h3></div>
+    </div>
+
 </div>
 
 
@@ -41,25 +43,32 @@
 
     <main id="speaker_anchor">
         <h2>SPEAKERS</h2>
-        <div class="card"><img src="speakers/david_overlay.jpg"/>
-            <h3>David<br/>Reinfurt</h3><h4>Dexter Sinister<br/>Princeton University<br/>Serving Library</h4>
-            <p>Biography: Natural Interfaces Conference offers a perspective of the past, present and the future of
-                interface design.</p>
+        <div class="card"><img src="images/ibanez_overlay.jpg"/>
+            <h3> Andreu<br/> Ibanez
+            </h3>
+            <h4>Google<br/> Project Tango</h4>
+            <p>
+                Andreu Ibanez is a Google expert, Google Developers Group Lleida founder and lead organizer,
+                Member of GDG Spain, Google Glass Explorer, Mentor admin and speaker Google Summer of Code.</p>
         </div>
-        <div class="card"><img src="speakers/alice_overlay.jpg"/>
-            <h3>Alice<br/>Rawsthorn</h3><h4>Dexter Sinister<br/>Princeton University<br/>Serving Library</h4>
-            <p>Biography: Natural Interfaces Conference offers a perspective of the past, present and the future of
-                interface design.</p>
+
+        <div class="card"><img src="images/markiyan_overlay.jpg"/>
+            <h3> Markiyan<br/> Matsekh
+            </h3>
+            <h4>ELEKS<br/> Tesla Apple Watch App</h4>
+            <p>
+                Markiyan is a seeker of new opportunities enabled by technology. For the last couple of years,
+                he has been heavily involved in mobile and wearable tech, as one of today's biggest disruptors.
+            </p>
         </div>
-        <div class="card"><img src="speakers/kimon_overlay.jpg"/>
-            <h3>Kimon<br/>Keramidas</h3><h4>Dexter Sinister<br/>Princeton University<br/>Serving Library</h4>
-            <p>Biography: Natural Interfaces Conference offers a perspective of the past, present and the future of
-                interface design.</p>
-        </div>
-        <div class="card"><img src="speakers/rob_overlay.jpg"/>
-            <h3>Rob<br/>Giampietro</h3><h4>Dexter Sinister<br/>Princeton University<br/>Serving Library</h4>
-            <p>Biography: Natural Interfaces Conference offers a perspective of the past, present and the future of
-                interface design.</p>
+
+        <div class="card"><img src="images/emre_overlay.jpg"/>
+            <h3> Emre <br/> Or
+            </h3>
+            <h4>Arvento<br/> Mobile Systems</h4>
+            <p>
+                Emro Or has been an innovative software engineer for about 30 years. Currently, he is the
+                Software Development Manager of Arvento Mobile Systems.</p>
         </div>
     </main>
 
@@ -228,7 +237,7 @@
 
 </div>
 
-<div class="wrapper">
+<div class="wrapper" style="margin-bottom: 0; border-radius: 8px 8px 0 0;">
 
     <section id="map_area">
         <img src="map.png"/>
@@ -238,7 +247,29 @@
 
 </div> <!-- closing tag, notice the back-slash-->
 
-<script src="js/scrolling-nav.js"></script>
+<footer style="box-shadow: 0 -19px 38px rgba(0,0,0,0.10); /* material casts shadow */">
+    <div class="transparentWrapper">
+        <ul class="list-inline social-buttons">
+            <li><a target="_blank" class="twitter" href="http://twitter.com/celikkoseoglu"><i
+                    class="fa fa-twitter"></i></a>
+            </li>
+            <li><a target="_blank" class="facebook" href="https://www.facebook.com/celikkoseoglu"><i
+                    class="fa fa-facebook"></i></a>
+            </li>
+            <li><a target="_blank" class="linkedin" href="http://linkedin.com/in/celikk"><i
+                    class="fa fa-linkedin"></i></a>
+            </li>
+            <li><a target="_blank" class="github" href="http://github.com/celikkoseoglu"><i
+                    class="fa fa-github"></i></a>
+            </li>
+            <li><a target="_blank" class="instagram" href="http://instagram.com/celikkoseoglu"><i
+                    class="fa fa-instagram"></i></a>
+            </li>
+            <li><a class="mail" href="mailto:celikkoseoglu@yahoo.com"><i class="fa fa-envelope"></i></a>
+            </li>
+        </ul>
+    </div>
+</footer>
 
 </body> <!-- closing tag, notice the back-slash-->
 </html> <!-- closing tag, notice the back-slash-->
