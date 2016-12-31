@@ -10,7 +10,7 @@
 
 <nav>
     <ul>
-        <li style="float: left"><a href="index.html#s">DevCon</a></li>
+        <li style="float: left"><a href="index.html#header_area">DevCon</a></li>
         <li><a href="index.html#location_area">Location</a></li>
         <li><a href="index.html#workshops_area">Workshops</a></li>
         <li><a href="index.html#schedule_area">Schedule</a></li>
@@ -18,7 +18,7 @@
     </ul>
 </nav>
 
-<header>
+<header id="header_area">
 
 </header>
 
@@ -42,8 +42,7 @@
 <div class="wrapper" style="border-radius: 0 0 8px 8px;">
 
     <main id="speaker_anchor">
-        <h2>SPEAKERS</h2>
-        <div class="card"><img src="images/ibanez_overlay.jpg"/>
+        <div class="card threeCard"><img src="images/ibanez_overlay.jpg"/>
             <h3> Andreu<br/> Ibanez
             </h3>
             <h4>Google<br/> Project Tango</h4>
@@ -52,32 +51,31 @@
                 Member of GDG Spain, Google Glass Explorer, Mentor admin and speaker Google Summer of Code.</p>
         </div>
 
-        <div class="card"><img src="images/markiyan_overlay.jpg"/>
+        <div class="card threeCard"><img src="images/markiyan_overlay.jpg"/>
             <h3> Markiyan<br/> Matsekh
             </h3>
             <h4>ELEKS<br/> Tesla Apple Watch App</h4>
             <p>
                 Markiyan is a seeker of new opportunities enabled by technology. For the last couple of years,
-                he has been heavily involved in mobile and wearable tech, as one of today's biggest disruptors.
+                he has been heavily involved in mobile and wearable tech, as one of today's biggest disruptors and innovators.
             </p>
         </div>
 
-        <div class="card"><img src="images/emre_overlay.jpg"/>
+        <div class="card threeCard"><img src="images/emre_overlay.jpg"/>
             <h3> Emre <br/> Or
             </h3>
             <h4>Arvento<br/> Mobile Systems</h4>
             <p>
                 Emro Or has been an innovative software engineer for about 30 years. Currently, he is the
-                Software Development Manager of Arvento Mobile Systems.</p>
+                Software Development Manager of Arvento Mobile Systems. He currently works on the mobile application.</p>
         </div>
     </main>
 
 </div>
 
-<div class="wrapper">
+<div id="schedule_area" class="wrapper">
 
     <section id="timetable_area">
-        <h2>SCHEDULE</h2>
         <table>
             <tr>
                 <th class="no_line">
@@ -97,38 +95,38 @@
             <tr>
                 <td class="r_align">10:00 - 12:00</td>
                 <td>Meet & Greet</td>
-                <td>Keramidas Lecture:<br/>The Interface Experience</td>
-                <td>Giampietro Lecture:<br/>I Am A Handle</td>
+                <td>Networking Event:<br/>Have Coffee With the Speakers</td>
+                <td>Late Breakfast:<br/>Regus Lunch Hall</td>
             </tr>
             <tr>
-                <td class="r_align">12:00 - 13:00</td>
+                <td class="r_align">12:30 - 13:30</td>
                 <td class="lunch_break">Lunch Break</td>
                 <td class="lunch_break">Lunch Break</td>
                 <td class="lunch_break">Lunch Break</td>
             </tr>
             <tr>
                 <td class="r_align">13:00 - 15:00</td>
-                <td>Workshop Intro: Reading Hours<br/><a href="reading_pack.zip">Download PDF packet</a></td>
-                <td>Workshops run simultaneously<br/>Session 1:The Discovery Stage</td>
-                <td>Workshops run simultaneously<br/>Session 3:The Creative Stage</td>
+                <td>Workshop: ReplayKit Lab<br/><a href="reading_pack.zip">Download Required Files</a></td>
+                <td>Talk: Andreu Ibanez<br/>Session 1: What is Project Tango</td>
+                <td>Talk: Andreu Ibanez<br/>Session 2: App Demos With Tango</td>
             </tr>
             <tr>
                 <td class="r_align">15:00 - 17:00</td>
-                <td>Workshop Intro: Reading Hours<br/><a href="reading_pack.zip">Download PDF packet</a></td>
-                <td>Workshops run simultaneously<br/>Discovery Stage (continued)</td>
-                <td>Workshops run simultaneously<br/>Session 4:The Application Stage</td>
+                <td>Talk: Markiyan Matsekh<br/>Session 1: How the API Works</td>
+                <td>Workshop: Iterative Design<br/><a href="reading_pack.zip">Download Required Files</a></td>
+                <td>Talk: Emre Or<br/>Session 2: How Arvento Works</td>
             </tr>
             <tr>
                 <td class="r_align">17:00 - 19:00</td>
-                <td>Reinfurt Lecture<br/>A Note On Time</td>
-                <td>Workshops run simultaneously<br/>Session 2: The Planning Stage</td>
-                <td>Workshops run simultaneously<br/>Session 5:The Presentation Stage</td>
+                <td>Workshop: Security &amp; Privacy<br/>A Note On Time</td>
+                <td>Workshop: Battery Life<br/>Session 1: Optimizing CPU Usage</td>
+                <td>Workshop: Battery Life<br/>Session 1: Optimizing IO Access</td>
             </tr>
             <tr>
                 <td class="r_align">19:00 - 21:00</td>
-                <td>Reinfurt Lecture<br/>A Note On Time</td>
-                <td>Workshops run simultaneously<br/>The Planning Stage (continued)</td>
-                <td>Exhibition Reception<br/>Library Exhibition Hall</td>
+                <td>Talk: Markiyan Matsekh<br/>Session 1: How We Cracked It</td>
+                <td>Talk: Emre Or<br/>Session 1: Advantages of Arvento</td>
+                <td>Networking Event:<br/>Add Everyone on Social Media</td>
             </tr>
         </table>
 
@@ -136,28 +134,27 @@
     </section>
 </div>
 
-<div class="wrapper">
-    <div class="card transparentcard">
-        <h3>Interface Experience<br/>
-            Workshop.</h3>
-        <blockquote>"The brain as thought producer, the body as action executer, the input device as interaction
-            receiver, the processor as input translator, the software as feedback generator, and the screen as
-            feedback provider. Understanding the interface as this connection of parts situates the computer
-            experience in a tangible reality."
+<div id="workshops_area" class="wrapper">
+    <div class="card fourCard transparentcard">
+        <h3>ReplayKit Lab<br/>
+            Swift.</h3>
+        <h4>Graphics and Games<br/>Made Easy</h4>
+        <blockquote>ReplayKit provides an easy-to-use framework that lets players record, share, and broadcast gameplay
+            sessions online. Meet the ReplayKit engineering team to receive hands-on technical guidance. Bring your code and questions.
         </blockquote>
         <p>Saturday 13:00 - 21:00<br/>
             Sunday 13:00 - 19:00<br/>
-            Location: FB310</p>
+            Location: Hall 132</p>
         <form>
-            <button type="submit" formaction="#openModal2">REGISTER ONLINE</button>
+            <button type="submit" formaction="#openModal2">REGISTER NOW</button>
         </form>
         <div id="openModal2" class="modalDialog">
 
             <div>
                 <a href="#close" class="close">X</a>
-                <h1>NATURAL INTERFACES 2017<br/>
+                <h1>DEVCON #17<br/>
                     <span class="salmon">ONLINE REGISTRATION</span><br/>
-                    <span class="lavender">INTERFACE EXPERIENCE</span></h1>
+                    <span class="lavender">REPLAYKIT LAB</span></h1>
                 <textarea placeholder="Name / Last Name"></textarea>
                 <textarea placeholder="School / Institution"></textarea>
                 <textarea placeholder="Email"></textarea>
@@ -170,27 +167,26 @@
         </div>
     </div>
 
-    <div class="card transparentcard">
-        <h3>I Am A Handle<br/>
-            Workshop.</h3>
-        <blockquote>"Did we distinguish between 'real' and 'virtual' things before the computer came along? Much in
-            the past was virtual (or at least metaphorical), even if it wasn't exactly digital.. Skies, clouds,
-            dreams, spells - all involved some sort of virtualization, some form of conjuring, some method of making
-            a world where one was not."
+    <div class="card fourCard transparentcard">
+        <h3>Security &amp; Privacy<br/>
+            Pen Test.</h3>
+        <h4>No Software<br/>Is Secure</h4>
+        <blockquote>Get together with the Apple security and privacy teams for expert advice on protecting your apps, servers and infrastructure.
+            Safeguard your users' data, and honor your users' privacy. Users love when apps stay secure and private.
         </blockquote>
         <p>Saturday 13:00 - 21:00<br/>
             Sunday 13:00 - 19:00<br/>
-            Location: FB310</p>
+            Location: Hall 112</p>
         <form>
-            <button type="submit" formaction="#openModal1">REGISTER ONLINE</button>
+            <button type="submit" formaction="#openModal1">REGISTER NOW</button>
         </form>
         <div id="openModal1" class="modalDialog">
 
             <div>
                 <a href="#close" class="close">X</a>
-                <h1>NATURAL INTERFACES 2017<br/>
+                <h1>DEVCON #17<br/>
                     <span class="salmon">ONLINE REGISTRATION</span><br/>
-                    <span class="lavender">I AM A HANDLE</span></h1>
+                    <span class="lavender">SECURITY &amp; PRIVACY</span></h1>
                 <textarea placeholder="Name / Last Name"></textarea>
                 <textarea placeholder="School / Institution"></textarea>
                 <textarea placeholder="Email"></textarea>
@@ -203,41 +199,41 @@
         </div>
     </div>
 
-    <div class="card transparentcard">
-        <h3>A Note On Time<br/>
-            Workshop.</h3>
-        <blockquote>"Interfaces have the possibility of conveying more than simply utility, they may also transmit a
-            point of view. Interfaces surround us, manifested in compiled code, running on silicon chips,
-            andfronting the computer services we all use, all the time. So, we had better understand at least a
-            little about how they are made."
+    <div class="card fourCard transparentcard">
+        <h3>Iterative UI<br/>
+            Design.</h3>
+        <h4>Flat Design<br/>Is Better</h4>
+        <blockquote>You're familiar with Keynote for making presentations, but it's also a powerful tool for
+            refining user interface layouts. Learn techniques and best practices for using
+            Keynote to quickly and persuasively express your impressive ideas.
         </blockquote>
         <p>Saturday 13:00 - 21:00<br/>
             Sunday 13:00 - 19:00<br/>
-            Location: FB310</p>
+            Location: Hall 122</p>
         <form>
-            <button type="submit" formaction="http://www.google.com">REGISTER ONLINE</button>
+            <button type="submit" formaction="http://www.google.com">REGISTER NOW</button>
         </form>
     </div>
 
-    <div class="card transparentcard">
-        <h3>By Design<br/>
-            Workshop.</h3>
-        <blockquote>"If interface design becomes equally imposing from a visual perspective, we will all benefit.
-            What would you rather see on your screen? The unexpectedly eloquent hamburger, whose only nod to
-            nostalgia is to the pioneering early age of computing, or a bookcase that is equally unappealing,
-            whether physical or digital?"
+    <div class="card fourCard transparentcard">
+        <h3>Battery Life<br/>
+            Performance.</h3>
+        <h4>All Devices<br/>Have Batteries</h4>
+        <blockquote>Gain specific insights for better I/O performance. Learn best practices
+            to reduce local storage operations and trim your memory usage. Learn on how to update your app to
+            increase responsiveness and extend battery life.
         </blockquote>
         <p>Saturday 13:00 - 21:00<br/>
             Sunday 13:00 - 19:00<br/>
-            Location: FB310</p>
+            Location: Hall 120</p>
         <form>
-            <button type="submit" formaction="http://www.google.com">REGISTER ONLINE</button>
+            <button type="submit" formaction="http://www.google.com">REGISTER NOW</button>
         </form>
     </div>
 
 </div>
 
-<div class="wrapper" style="margin-bottom: 0; border-radius: 8px 8px 0 0;">
+<div id="location_area" class="wrapper" style="margin-bottom: 0; border-radius: 8px 8px 0 0;">
 
     <section id="map_area">
         <img src="map.png"/>
@@ -249,7 +245,7 @@
 
 <footer style="box-shadow: 0 -19px 38px rgba(0,0,0,0.10); /* material casts shadow */">
     <div class="transparentWrapper">
-        <ul class="list-inline social-buttons">
+        <ul class="social-buttons">
             <li><a target="_blank" class="twitter" href="http://twitter.com/celikkoseoglu"><i
                     class="fa fa-twitter"></i></a>
             </li>

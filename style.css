@@ -12,7 +12,7 @@ body {
 	width: 1200px; /* width of the wrapper material */
 	height: auto; /* height of the wrapper material */
 	margin: 0 auto 40px auto;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
 	background-color: rgba(252,251,250,0.9);
 	border-radius: 8px;
 	box-shadow: 0 19px 38px rgba(0,0,0,0.30); /* material casts shadow */
@@ -34,7 +34,7 @@ header	{
 	background-size: cover;
 	background-color: #131b1f; /*#69BEF5;*/
 	background-size: 634px 476px;
-	background-position: 10% 40%;
+	background-position: 50% 40%;
 	box-shadow: 0 9px 18px rgba(0, 0, 0, 0.36);
 	position: relative;
 	z-index: 2;
@@ -112,7 +112,7 @@ h1	{
 	letter-spacing: -1px;
 }
 .salmon	{
-	color: #ff799c;
+	color: #757575;
 }
 .lavender	{
 	color: #B2DFDB;
@@ -123,15 +123,21 @@ main	{
 	float: left;
 }
 .card	{
-	width: 22.5%;
 	float: left;
 	margin-left: 2%;
 	margin-top: 24px;
 	height: auto;
-	background-color: #fff;
 	border-radius: 2px;
-	box-shadow: 0 9px 18px rgba(0,0,0,0.30);
 }
+
+.threeCard {
+	width: 30.7%;
+}
+
+.fourCard {
+	width: 22.5%;
+}
+
 .card img	{
 	width: 100%;
 }
@@ -174,6 +180,7 @@ header p	{
 	margin-top: 16px;
 	color: #212121;
 	margin-left: 16px;
+	margin-right: 16px;
 }
 
 button	{
@@ -190,7 +197,7 @@ button	{
 	transition: all 0.3s ease 0s; 
 }
 button:hover	{
-	background-color: #aabee0;
+	background-color: #009688;
 }	
 .floattext	{
 	width: 30%;
@@ -206,19 +213,15 @@ button:hover	{
 #timetable_area	{
 	width: 100%;
 	float: left;
-	margin-top: 96px;
 }
 table	{
-	width: 75%;
+	width: 96%;
 	font-family: 'Roboto';
-	font-size: 16px;
 	line-height: 24px;
 	font-weight: 300;
 	color: #212121;
-	margin: 24px auto 96px auto;
+	margin: 24px auto 0px auto;
 	text-align: left;
-	background-color: #fff;
-	box-shadow: 0 9px 18px rgba(0,0,0,0.30);
 	border-radius: 2px;
 	border-spacing: 22px 22px;
 }
@@ -238,12 +241,12 @@ th	{
 	color: rgba(0,0,0,0.54);
 }
 a	{
-	color: #aabee0;
+	color: #009688;
 	text-decoration: none;
 	transition: all 0.3s ease-in;
 }
 a:hover	{
-	color: #ff799c;
+	color: #BDBDBD;
 }
 nav	{
 	width: 100%;
@@ -337,7 +340,7 @@ blockquote	{
 	padding: 24px 48px;
 }
 .close	{
-	background: #ff799c;
+	background: #BDBDBD;
 	color: #fff;
 	font-weight: 700;
 	text-align: center;
@@ -351,7 +354,7 @@ blockquote	{
 	transition: all 0.3s ease-in;
 }
 .close:hover	{
-	background: #aabee0;
+	background: #009688;
 	color: #fff;
 	box-shadow: 0 12px 18px rgba(0,0,0,0.3);
 }
@@ -378,14 +381,21 @@ textarea	{
 }
 
 footer {
+
 	width: 100%;
 	height: 434px;
-	background: #131b1f url('images/hero-img-footer.jpg') no-repeat 50% 25%;
+	background-image: url('images/hero-img-footer.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #131b1f; /*#69BEF5;*/
 	background-size: 900px auto;
+	background-position: 50% 25%;
+	box-shadow: 0 9px 18px rgba(0, 0, 0, 0.36);
+	position: relative;
+	z-index: 2;
 	padding: 35px 0;
 	text-align: center;
-	font-family: 'Roboto';
-	font-size: 16px;
+
 }
 
 footer li {
@@ -397,6 +407,7 @@ ul.social-buttons {
 	margin-top: 380px;
 	margin-bottom: 0;
 	white-space: nowrap;
+	line-height: 80px;
 }
 
 ul.social-buttons li a {
@@ -469,113 +480,80 @@ ul.social-buttons .mail:hover, ul.social-buttons .mail:focus, ul.social-buttons 
 	background-color: rgb(221, 221, 221);
 }
 
+@media screen and (min-width: 800px) and (max-width: 1000px) and (orientation: portrait) {
+	.wrapper, .transparentWrapper	{
+		width: 98%;
+	}
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1025px) and (orientation: landscape) {
-	#wrapper	{
-		width: 925px;
-		margin: 30px auto;
+	.card {
+		width: 96%;
 	}
-	nav	{
-		width: 925px;
+
+	.announcement-bar {
+		width: 93%;
 	}
-	.card, #timetable_area .card	{
-		width: 47%;
+
+	.announcement-bar h3 {
+		font-size: 45px;
+		margin-left: 30px;
 	}
-	table	{
-		width: 94%;
+
+	.announcement-bar button {
+		height: 70px;
+		width: 160px;
+		margin-right: -30px;
 	}
+
+	nav {
+		font-size: 32px;
+		line-height: 2em;
+	}
+
+	.transparentcard button {
+		height: 100px;
+		width: 300px;
+		font-size: 36px;
+	}
+
+	.transparentcard h3 {
+		font-size: 56px;
+	}
+
+	.transparentcard h4 {
+		font-size: 46px;
+	}
+
+	.transparentcard blockquote {
+		font-size: 30px;
+		line-height: 1.2em;
+	}
+
+	.card h3 {
+		font-size: 56px;
+	}
+
+	.card h4 {
+		font-size: 46px;
+	}
+
+	.card p {
+		font-size: 30px;
+		line-height: 1.2em;
+	}
+
+	#timetable_area {
+		font-size: 30px;
+	}
+
+	table {
+		line-height: 1.3em;
+	}
+
+	.r_align {
+		text-align: left;
+	}
+
 	header	{
-		height: auto;
-	}
-	#herotype	{
-		margin-top: 40px;
-		width: 33%;
-	}
-}
-
-@media screen and (min-device-width: 768px) and (max-device-width: 1025px) and (orientation: portrait) {
-	#wrapper {
-		width: 725px;
-		margin: 30px auto;
-	}
-
-	nav {
-		width: 725px;
-	}
-
-	.card, #timetable_area .card {
-		width: 47%;
-	}
-
-	table {
-		width: 94%;
-	}
-
-	header {
-		height: auto;
-	}
-
-	#herotype {
-		margin-top: 40px;
-		width: 42%;
-		background-color: #fff;
-	}
-}
-
-@media screen and (min-device-width: 768px) and (max-device-width: 1025px) and (orientation: landscape) {
-	#wrapper {
-		width: 925px;
-		margin: 30px auto;
-	}
-
-	nav {
-		width: 925px;
-	}
-
-	.card, #timetable_area .card {
-		width: 47%;
-	}
-
-	table {
-		width: 94%;
-	}
-
-	header {
-		height: auto;
-	}
-
-	#herotype {
-		margin-top: 40px;
-		width: 33%;
-	}
-}
-
-@media screen and (min-device-width: 768px) and (max-device-width: 1025px) and (orientation: portrait) {
-	#wrapper {
-		width: 725px;
-		margin: 30px auto;
-	}
-
-	nav {
-		width: 725px;
-	}
-
-	.card, #timetable_area .card {
-		width: 20%;
-	}
-
-	table {
-		width: 94%;
-	}
-
-	header {
-		height: auto;
-	}
-
-	#herotype {
-		margin-top: 40px;
-		width: 42%;
-		background-color: #fff;
-		padding: 4%;
+		background-size: 734px auto;
 	}
 }
